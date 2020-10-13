@@ -1,0 +1,29 @@
+{
+	"manifest_version":2,
+
+	"name": "NoQuora",
+
+	"version":"1.0",
+
+	"description": "Stops Quora from forcing you to make an account.",
+
+	"browser_action": {
+		"default_popup":"popup.html",
+		"default_icon": "quora.png"
+	},
+	"permissions": [
+		"activeTab",
+		"webNavigation",
+		"storage"
+
+	],
+	"background": { "scripts": ["background.js"] },
+	"content_scripts": [
+		{
+			"matches": ["https://*.quora.com/*"],
+			"run_at": "document_idle",
+			"js":["contentS.js"]
+		}
+	]
+
+}

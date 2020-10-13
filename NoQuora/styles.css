@@ -1,0 +1,14 @@
+html{
+	background-color: #282A36;
+	color:#bd93f9;
+}
+body{
+	width:max-content; 
+	height: fit-content;
+	text-align: center;
+}
+h1{
+	color:#FFFFFF;
+	font-size: 14px;
+	font-family: 'Ubuntu Mono', monospace;
+}
